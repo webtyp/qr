@@ -1,11 +1,11 @@
 package qr
 
 import (
+	"bytes"
 	"encoding/xml"
 	"io"
 	"os"
 	"path/filepath"
-	"strings"
 	"testing"
 	"webtyp.com/fmt"
 )
@@ -44,7 +44,7 @@ func TestSVGXMLStructureAndPathCount(t *testing.T) {
 
 	svgStr := m.SVG(SVGOptions{})
 
-	decoder := xml.NewDecoder(strings.NewReader(svgStr))
+	decoder := xml.NewDecoder(bytes.NewReader([]byte(svgStr)))
 	pathCount := 0
 	rectCount := 0
 
