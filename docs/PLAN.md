@@ -2,8 +2,9 @@
 PLAN: "feat: QR encoding to a module matrix with SVG rendering"
 EXECUTOR: jules
 REVIEWER: none
-STATUS: running
+STATUS: review
 SESSION: 16194427645207130646
+PR: https://github.com/webtyp/qr/pull/1
 ---
 
 > This plan is dispatched via the CodeJob workflow. See skill: agents-workflow.
